@@ -16,10 +16,12 @@ export default function Header() {
             Alaska Military Home Loans
           </span>
         </Link>
-        <nav style={{ display: 'flex', alignItems: 'center', gap: 22 }}>
+        <nav style={{ display: 'flex', alignItems: 'center', gap: 18, flexWrap: 'wrap' }}>
           <Link href="/jber" style={navLink}>JBER</Link>
           <Link href="/anchorage-va-loans" style={navLink}>Anchorage</Link>
           <Link href="/fairbanks-va-loans" style={navLink}>Fairbanks</Link>
+          <Link href="/pcs" style={navLink}>PCS</Link>
+          <Link href="/blog" style={navLink}>Insights</Link>
           <a href="#apply" style={{ ...navLink, background: C.gold, color: C.bg, padding: '8px 16px', borderRadius: 6, fontWeight: 700 }}>
             Get Started
           </a>

@@ -20,9 +20,22 @@ export default function Footer() {
           <div>
             <div style={{ color: C.text, fontSize: 13, fontWeight: 700, marginBottom: 8, textTransform: 'uppercase', letterSpacing: '0.06em' }}>Locations</div>
             <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
-              <li><a href="/jber" style={fLink}>JBER VA Loans</a></li>
-              <li><a href="/anchorage-va-loans" style={fLink}>Anchorage VA Loans</a></li>
-              <li><a href="/fairbanks-va-loans" style={fLink}>Fairbanks VA Loans</a></li>
+              <li><a href="/jber" style={fLink}>JBER</a></li>
+              <li><a href="/anchorage-va-loans" style={fLink}>Anchorage</a></li>
+              <li><a href="/eagle-river-va-loans" style={fLink}>Eagle River</a></li>
+              <li><a href="/wasilla-va-loans" style={fLink}>Wasilla</a></li>
+              <li><a href="/mat-su-va-loans" style={fLink}>Mat-Su Valley</a></li>
+              <li><a href="/fairbanks-va-loans" style={fLink}>Fairbanks / Eielson</a></li>
+              <li><a href="/kodiak-va-loans" style={fLink}>Kodiak / USCG</a></li>
+              <li><a href="/soldotna-va-loans" style={fLink}>Soldotna / Kenai</a></li>
+            </ul>
+          </div>
+          <div>
+            <div style={{ color: C.text, fontSize: 13, fontWeight: 700, marginBottom: 8, textTransform: 'uppercase', letterSpacing: '0.06em' }}>Resources</div>
+            <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
+              <li><a href="/pcs" style={fLink}>PCS to Alaska</a></li>
+              <li><a href="/blog" style={fLink}>VA Loan Insights</a></li>
+              <li><a href="/#apply" style={fLink}>Get Pre-Approved</a></li>
             </ul>
           </div>
           <div>
@@ -46,15 +59,16 @@ export default function Footer() {
 
         <div style={{ borderTop: `1px solid ${C.borderLight}`, paddingTop: 18, fontSize: 11, color: C.textFaint, lineHeight: 1.7 }}>
           <p style={{ margin: '0 0 6px' }}>
-            © 2026 Alaska Military Home Loans · A Huit.AI Network Property · Derek Huit, NMLS #203980 · Cardinal Financial Company, NMLS #66247 · Equal Housing Lender
+            © 2026 Alaska Military Home Loans · A Huit.AI Network Property · Derek Huit, Loan Officer NMLS #203980 · Cardinal Financial Company, Limited Partnership · Company NMLS #66247 · VA-approved lender
           </p>
           <p style={{ margin: '0 0 6px' }}>
             <a href="https://huit.ai/terms" style={fLinkSmall}>Terms</a> ·{' '}
             <a href="https://huit.ai/privacy" style={fLinkSmall}>Privacy</a> ·{' '}
-            <a href="https://www.nmlsconsumeraccess.org/EntityDetails.aspx/INDIVIDUAL/203980" style={fLinkSmall} target="_blank" rel="noopener noreferrer">NMLS Consumer Access</a>
+            <a href="https://www.nmlsconsumeraccess.org/EntityDetails.aspx/INDIVIDUAL/203980" style={fLinkSmall} target="_blank" rel="noopener noreferrer">Verify Derek Huit on NMLS</a> ·{' '}
+            <a href="https://www.nmlsconsumeraccess.org/EntityDetails.aspx/COMPANY/66247" style={fLinkSmall} target="_blank" rel="noopener noreferrer">Verify Cardinal Financial on NMLS</a>
           </p>
           <p style={{ margin: 0 }}>
-            VA-approved lender. This site is not affiliated with or endorsed by the U.S. Department of Veterans Affairs or any government agency. Loan products subject to credit approval. Rates, fees, and terms subject to change without notice.
+            VA-approved lender. This site is not affiliated with or endorsed by the U.S. Department of Veterans Affairs or any government agency. Loan products subject to credit approval. Rates, fees, and terms subject to change without notice. Equal Housing Lender.
           </p>
         </div>
       </div>

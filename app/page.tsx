@@ -202,11 +202,111 @@ export default function HubPage() {
       </Section>
 
       {/* GEO HUB LINKS */}
-      <Section eyebrow="Pick your duty station">
+      <Section eyebrow="Pick your area">
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: 14 }}>
           <GeoCard href="/jber" title="JBER" subtitle="Joint Base Elmendorf-Richardson" body="Active-duty Anchorage. PCS resources, off-base neighborhood guides, BAH-vs-mortgage math." />
-          <GeoCard href="/anchorage-va-loans" title="Anchorage" subtitle="South Anchorage, Eagle River, Mat-Su" body="Veterans and retirees. Eagle River and South Anchorage VA-friendly neighborhoods. JBER-adjacent purchases." />
+          <GeoCard href="/anchorage-va-loans" title="Anchorage" subtitle="South Anchorage, Hillside, Sand Lake" body="Veterans and retirees. JBER-adjacent purchases, IRRRL refinancing, Anchorage market expertise." />
+          <GeoCard href="/eagle-river-va-loans" title="Eagle River" subtitle="JBER's preferred bedroom community" body="Family-friendly, top schools, 15-min JBER commute. Eagle River Valley and Chugiak coverage." />
+          <GeoCard href="/wasilla-va-loans" title="Wasilla" subtitle="Mat-Su Valley fastest growth" body="Largest homes per dollar in the Anchorage Bowl. JBER-affordable for families wanting space." />
+          <GeoCard href="/mat-su-va-loans" title="Mat-Su Valley" subtitle="Wasilla, Palmer, Big Lake, Houston" body="Acreage, off-grid possibilities, well/septic VA appraisal handling." />
           <GeoCard href="/fairbanks-va-loans" title="Fairbanks" subtitle="Eielson AFB, Fort Wainwright" body="Interior Alaska. Cold-soaked properties, fuel-cost residual income, well/septic guidance." />
+          <GeoCard href="/kodiak-va-loans" title="Kodiak" subtitle="USCG Base Kodiak" body="Coast Guard families. Small market specifics, limited inventory, Coast Guard-aware lending." />
+          <GeoCard href="/soldotna-va-loans" title="Soldotna / Kenai" subtitle="Kenai Peninsula" body="Veterans relocating south of Anchorage. Lower price points, quieter market, ferry-line considerations." />
+        </div>
+      </Section>
+
+      {/* PCS CALLOUT */}
+      <section style={{ padding: '36px 20px', maxWidth: 1100, margin: '0 auto' }}>
+        <a href="/pcs" style={{ display: 'block', background: 'linear-gradient(135deg, rgba(212,175,55,0.08), rgba(193,39,45,0.04))', border: `1px solid ${C.border}`, borderRadius: 14, padding: '28px 30px', textDecoration: 'none' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 24, flexWrap: 'wrap' }}>
+            <div style={{ flex: '1 1 360px' }}>
+              <div style={{ fontSize: 11, color: C.gold, letterSpacing: '0.14em', textTransform: 'uppercase', fontWeight: 700, marginBottom: 6 }}>PCS Orders to Alaska?</div>
+              <div style={{ fontFamily: F.serif, fontSize: 24, color: C.text, fontWeight: 800, marginBottom: 6 }}>Get your VA pre-approval started before you arrive →</div>
+              <div style={{ color: C.textDim, fontSize: 14.5, lineHeight: 1.6 }}>
+                Lock a rate from your prior duty station. Sign electronically. Walk into the keys ready.
+              </div>
+            </div>
+            <div style={{ background: C.gold, color: C.bg, padding: '12px 22px', borderRadius: 8, fontSize: 14, fontWeight: 800 }}>
+              PCS Resources →
+            </div>
+          </div>
+        </a>
+      </section>
+
+      {/* IRRRL DEEP DIVE */}
+      <Section eyebrow="VA IRRRL · Streamline Refinance" title="Already have a VA loan? The IRRRL is the easiest refinance on the market.">
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: 14 }}>
+          <Card title="No appraisal in most cases">
+            VA waives the property appraisal requirement on most IRRRL refinances. That alone saves $750–$1,200 and 7–10 days vs a conventional refi.
+          </Card>
+          <Card title="No income or asset verification">
+            VA underwrites IRRRLs on payment history alone. If you've been on time on the existing VA loan, the income docs that took weeks the first time are skipped.
+          </Card>
+          <Card title="No new COE required">
+            Your existing entitlement carries over directly into the new loan. No DD-214 retrieval, no eligibility re-determination.
+          </Card>
+          <Card title="0.5% funding fee">
+            IRRRL funding fee is 0.5% — far below the 2.15%–3.3% on a purchase or cash-out refinance. Financed into the loan.
+          </Card>
+          <Card title="Net Tangible Benefit required">
+            VA requires the refi save at least 0.5% in interest rate or cut your term by ≥3 years (with a payment increase). We'll calculate the exact NTB before you commit.
+          </Card>
+          <Card title="Break-even in 12–18 months">
+            Typical IRRRL closing costs are $2,500–$4,500 in Alaska. If your rate drops 0.75%+, the break-even is 12–18 months — well below most veterans' remaining tenure.
+          </Card>
+        </div>
+        <div style={{ marginTop: 18, padding: '18px 22px', background: C.bg2, border: `1px solid ${C.border}`, borderRadius: 10, fontSize: 14, color: C.textDim, lineHeight: 1.7 }}>
+          <strong style={{ color: C.gold }}>VA Cash-Out is different.</strong> A VA cash-out refinance lets you pull equity up to 90% LTV — higher than most conventional cash-outs (80%). But the cash-out is fully underwritten (income, appraisal, DTI). Many veterans confuse the two — IRRRL is a rate/term refi only; cash-out is its own product.
+        </div>
+      </Section>
+
+      {/* COE WALKTHROUGH */}
+      <Section eyebrow="Certificate of Eligibility (COE)" title="What it is, why you need it, and how Derek pulls yours in minutes">
+        <div style={{ background: C.bg2, border: `1px solid ${C.border}`, borderRadius: 12, padding: '28px 28px' }}>
+          <p style={{ color: C.textDim, lineHeight: 1.75, marginBottom: 20 }}>
+            Your Certificate of Eligibility (COE) is the document that proves you qualify for VA home loan benefits. It tells your lender how much entitlement you have, whether the funding fee applies, and whether you've used VA financing before. <strong style={{ color: C.text }}>You cannot close a VA loan without one.</strong>
+          </p>
+          <ol style={{ listStyle: 'none', padding: 0, counterReset: 'coe' }}>
+            <CoeStep n="1" title="Derek pulls your COE in WebLGY">
+              In most cases your lender (Derek) requests it directly through the VA's automated WebLGY system. Most active-duty and recently-discharged veterans get an instant electronic COE — no DD-214 hunt required.
+            </CoeStep>
+            <CoeStep n="2" title="If WebLGY can't auto-issue, we file VA Form 26-1880">
+              Some service histories (older records, Reserve/Guard time, certain transitions) need manual eligibility review. We file it for you. Typical turnaround: 5–10 business days.
+            </CoeStep>
+            <CoeStep n="3" title="What the COE tells us">
+              Your entitlement amount (basic + bonus), funding fee status (exempt for VA disability comp), and any prior VA loans still using entitlement. This drives whether you have full or partial entitlement remaining.
+            </CoeStep>
+            <CoeStep n="4" title="Why this matters before you shop">
+              A pre-approval without a real COE is guessing. Derek pulls the COE first, calculates your real $0-down ceiling, and only then quotes a max purchase price. Less rework, no nasty surprises in escrow.
+            </CoeStep>
+          </ol>
+          <p style={{ fontSize: 12, color: C.textFaint, marginTop: 18, lineHeight: 1.6 }}>
+            COE is required regardless of which lender you use. Derek pulls it as part of every free VA pre-approval — no obligation to proceed afterwards.
+          </p>
+        </div>
+      </Section>
+
+      {/* WHY US FOR VA */}
+      <Section eyebrow="Why work with Derek for your VA loan" title="Three things most Lower 48 lenders miss in Alaska">
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(290px, 1fr))', gap: 16 }}>
+          <Card icon="①" title="Alaska appraisal expertise">
+            Bush properties, well-and-septic, post-and-pad foundations, permafrost zones, and remote appraiser availability — these derail Lower 48 lenders. Derek pre-screens for issues before you write the offer.
+          </Card>
+          <Card icon="②" title="JBER and Eielson cycle awareness">
+            BAH adjustments, PCS season volume, base-housing waitlists, and which neighborhoods absorb military families well — local context that affects your buy/rent decision and your lender's responsiveness during PCS season.
+          </Card>
+          <Card icon="③" title="VA-specific underwriting overlays">
+            Cardinal Financial offers true VA-only underwriting (no inflated overlays). Most retail lenders quietly add 620+ FICO overlays, MCC stack restrictions, or seller-credit limits that hurt VA borrowers. We don't.
+          </Card>
+          <Card icon="④" title="The IRRRL second-pass discipline">
+            We track every existing VA loan we've closed for active rate-improvement opportunities. When rates drop 50+ basis points, you get a one-page IRRRL break-even — not a sales pitch.
+          </Card>
+          <Card icon="⑤" title="Cardinal Financial = nationwide VA">
+            Cardinal Financial Company (NMLS #66247) is a top-tier VA-approved lender, full delegated authority, in-house underwriting. We operate at the speed of a small lender with the rate sheet of a national one.
+          </Card>
+          <Card icon="⑥" title="$1B+ closed, 18+ years in this state">
+            Career production speaks. The reps who made the wrong calls early in their careers are not still doing $1B-volume in their 18th year. Pattern-matching matters when something goes sideways.
+          </Card>
         </div>
       </Section>
 
@@ -296,6 +396,18 @@ function FAQ({ items }: { items: any[] }) {
         </details>
       ))}
     </div>
+  )
+}
+
+function CoeStep({ n, title, children }: { n: string; title: string; children: React.ReactNode }) {
+  return (
+    <li style={{ display: 'flex', gap: 18, padding: '14px 0', borderBottom: `1px solid ${C.borderLight}` }}>
+      <div style={{ flexShrink: 0, width: 36, height: 36, borderRadius: '50%', background: C.gold, color: C.bg, display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: F.serif, fontSize: 16, fontWeight: 800 }}>{n}</div>
+      <div>
+        <h4 style={{ fontFamily: F.serif, color: C.text, fontSize: 16, fontWeight: 700, marginBottom: 6 }}>{title}</h4>
+        <p style={{ color: C.textDim, fontSize: 14, lineHeight: 1.7, margin: 0 }}>{children}</p>
+      </div>
+    </li>
   )
 }
 
