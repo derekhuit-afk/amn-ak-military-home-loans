@@ -55,8 +55,8 @@ export default function GeoPage({
               <a href="#apply" style={{ background: C.gold, color: C.bg, padding: '14px 26px', borderRadius: 8, fontSize: 14, fontWeight: 800, textDecoration: 'none' }}>
                 Get My VA Pre-Approval →
               </a>
-              <a href="tel:+19077272727" style={{ background: 'transparent', color: C.text, padding: '14px 26px', borderRadius: 8, fontSize: 14, fontWeight: 700, textDecoration: 'none', border: `1px solid ${C.border}` }}>
-                Call (907) 727-2727
+              <a href="tel:+19072449368" style={{ background: 'transparent', color: C.text, padding: '14px 26px', borderRadius: 8, fontSize: 14, fontWeight: 700, textDecoration: 'none', border: `1px solid ${C.border}` }}>
+                Call (907) 244-9368
               </a>
             </div>
           </div>

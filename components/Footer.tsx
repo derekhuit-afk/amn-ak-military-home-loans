@@ -38,8 +38,8 @@ export default function Footer() {
             <div style={{ color: C.text, fontSize: 13, fontWeight: 700, marginBottom: 8, textTransform: 'uppercase', letterSpacing: '0.06em' }}>Contact</div>
             <p style={{ color: C.textDim, fontSize: 13, lineHeight: 1.7, margin: 0 }}>
               Derek Huit<br />
-              <a href="tel:+19077272727" style={fLink}>(907) 727-2727</a><br />
-              <a href="mailto:derek@huit.ai" style={fLink}>derek@huit.ai</a>
+              <a href="tel:+19072449368" style={fLink}>(907) 244-9368</a><br />
+              <a href="mailto:derek.huit@cardinalfinancial.com" style={fLink}>derek.huit@cardinalfinancial.com</a>
             </p>
           </div>
         </div>

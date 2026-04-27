@@ -19,7 +19,7 @@ const faqSchema = {
       name: 'How much VA loan can I get in Alaska in 2026?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'With full VA entitlement there is no maximum loan amount, but lenders typically follow the 2026 conforming loan limit of $806,500 (high-cost designation in most Alaska counties). Above that threshold loans are still possible but may require a small down payment proportional to the amount over the limit.',
+        text: 'With full VA entitlement (first-time use or fully restored) there is no VA-imposed loan limit in Alaska — your maximum is whatever a lender will approve based on income, credit, and the appraisal. The $1,249,125 Alaska high-cost limit (2026) only matters if you have partial entitlement remaining from a prior VA loan, in which case it sets your $0-down ceiling. Above either ceiling, larger purchases are still possible with a proportional down payment.',
       },
     },
     {
@@ -88,8 +88,8 @@ export default function HubPage() {
               <a href="#apply" style={{ background: C.gold, color: C.bg, padding: '15px 28px', borderRadius: 8, fontSize: 15, fontWeight: 800, textDecoration: 'none', minHeight: 48, display: 'inline-flex', alignItems: 'center' }}>
                 Get My VA Pre-Approval →
               </a>
-              <a href="tel:+19077272727" style={{ background: 'transparent', color: C.text, padding: '15px 28px', borderRadius: 8, fontSize: 15, fontWeight: 700, textDecoration: 'none', border: `1px solid ${C.border}`, minHeight: 48, display: 'inline-flex', alignItems: 'center' }}>
-                Call (907) 727-2727
+              <a href="tel:+19072449368" style={{ background: 'transparent', color: C.text, padding: '15px 28px', borderRadius: 8, fontSize: 15, fontWeight: 700, textDecoration: 'none', border: `1px solid ${C.border}`, minHeight: 48, display: 'inline-flex', alignItems: 'center' }}>
+                Call (907) 244-9368
               </a>
             </div>
 
@@ -126,7 +126,7 @@ export default function HubPage() {
       <Section eyebrow="VA Entitlement, in plain English" title="What you actually have, and how to use it">
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(290px, 1fr))', gap: 16 }}>
           <Card title="First-time use">
-            Full entitlement = no loan limit if you have full entitlement. With $0 down, you can typically borrow up to the conforming limit ($806,500 in 2026 high-cost areas, which covers most of Alaska) without contributing a down payment.
+            Full entitlement means no VA loan limit at all. Your maximum is whatever a lender approves on income, credit, and the appraisal. With $0 down. The $1,249,125 figure (Alaska's 2026 statutory high-cost limit) only matters if you have partial entitlement remaining.
           </Card>
           <Card title="Restoration">
             Sold the previous VA-financed home, or had it assumed by another VA-eligible borrower? You're eligible for one-time entitlement restoration. Derek runs that process on your behalf.

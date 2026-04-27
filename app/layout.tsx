@@ -62,8 +62,8 @@ const localBusinessSchema = {
   name: 'Alaska Military Home Loans — Derek Huit',
   description: "Alaska's VA loan specialist for active duty, veterans, and military families.",
   url: 'https://akmilitaryhomeloans.com',
-  telephone: '+1-907-727-2727',
-  email: 'derek@huit.ai',
+  telephone: '+1-907-244-9368',
+  email: 'derek.huit@cardinalfinancial.com',
   address: {
     '@type': 'PostalAddress',
     addressLocality: 'Anchorage',

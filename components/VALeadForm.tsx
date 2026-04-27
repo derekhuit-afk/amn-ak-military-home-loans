@@ -53,13 +53,13 @@ export default function VALeadForm({
       })
       const data = await res.json().catch(() => ({}))
       if (!res.ok) {
-        setError(data.error || 'Submission failed. Please call (907) 727-2727.')
+        setError(data.error || 'Submission failed. Please call (907) 244-9368.')
         setSubmitting(false)
         return
       }
       setSuccess(true)
     } catch {
-      setError('Connection issue. Please call (907) 727-2727.')
+      setError('Connection issue. Please call (907) 244-9368.')
     } finally {
       setSubmitting(false)
     }
@@ -74,7 +74,7 @@ export default function VALeadForm({
           Derek will contact you within one business day to walk through your VA entitlement, certificate of eligibility, and pre-approval next steps.
         </p>
         <p style={{ color: C.textFaint, fontSize: 13 }}>
-          Need answers sooner? Call <a href="tel:+19077272727" style={{ color: C.gold }}>(907) 727-2727</a>.
+          Need answers sooner? Call <a href="tel:+19072449368" style={{ color: C.gold }}>(907) 244-9368</a>.
         </p>
       </div>
     )
